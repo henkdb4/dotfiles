@@ -9,5 +9,5 @@ How to add files to home dir:
 	git init
 	git remote add origin git@github.com:henkdb4/config.git
 	git fetch --all
-	git reset --hard origin/master
+	git reset --hard origin/main
 ```
