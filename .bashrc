@@ -120,6 +120,6 @@ fi
 eval "$(starship init bash)"
 
 # SSH Access
-alias S530="ssh 192.168.0.178"
-alias minibox="ssh 192.168.0.144"
+alias S530="ssh henkdb4@192.168.0.178"
+alias minibox="ssh henkdb4@192.168.0.144"
 
