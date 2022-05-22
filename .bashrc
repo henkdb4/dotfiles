@@ -117,7 +117,9 @@ if ! shopt -oq posix; then
 fi
 . "$HOME/.cargo/env"
 
-eval "$(starship init bash)"
+if test -n "$(which starship)"; then
+	eval "$(starship init bash)"
+fi
 
 # SSH Access
 alias S530="ssh henkdb4@192.168.0.178"
