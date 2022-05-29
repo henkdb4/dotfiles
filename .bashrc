@@ -125,3 +125,8 @@ fi
 alias S530="ssh henkdb4@192.168.0.178"
 alias minibox="ssh henkdb4@192.168.0.144"
 
+
+
+
+# shopt -s cdspell
+# ind 'set completion-ignore-case on'
