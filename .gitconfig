@@ -1,3 +1,5 @@
 [user]
 	email = henkdb4@gmail.com
 	name = Henk Barten
+[init]
+	defaultBranch = main
