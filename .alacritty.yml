@@ -1,5 +1,5 @@
 import: 
-  - .config/alacritty/dracula.yml
+  - ~/.config/alacritty/dracula.yml
 
 env:
   WINIT_X11_SCALE_FACTOR: "1"  # Make alacritty not scale on laptop
@@ -23,3 +23,6 @@ font:
   size: 12
 
 dynamic_title: true
+
+key_bindings:
+  - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
