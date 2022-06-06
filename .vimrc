@@ -22,3 +22,5 @@ set tabstop=3
 packadd! dracula
 syntax enable
 colorscheme dracula
+
+set number

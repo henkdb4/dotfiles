@@ -1,2 +1,22 @@
 import: 
   - .config/alacritty/dracula.yml
+
+font:
+  # Normal (roman) font face
+  normal:
+    family: Fira Code
+    style: Regular
+  
+  # Bold font face
+  bold:
+    family: Fira Code
+    style: Bold
+
+  # Italic font face
+  italic:
+    family: Hack
+    style: Italic
+
+  size: 8
+
+dynamic_title: true
