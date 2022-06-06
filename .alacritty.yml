@@ -1,5 +1,5 @@
 import: 
-  - .config/alacritty/dracula.yml
+  - ~/.config/alacritty/dracula.yml
 
 font:
   # Normal (roman) font face
@@ -20,3 +20,6 @@ font:
   size: 12
 
 dynamic_title: true
+
+key_bindings:
+  - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
