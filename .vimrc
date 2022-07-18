@@ -20,7 +20,7 @@ set shiftwidth=3
 
 " Hybrid numbering, relative except the current line. 
 set number
-set relativenumber
+"set relativenumber
 set ruler
 
 
