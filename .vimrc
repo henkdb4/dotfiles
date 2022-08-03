@@ -17,6 +17,12 @@ filetype plugin indent on
 set tabstop=3
 set shiftwidth=3
 
+packadd! dracula
+packadd! rust.vim
+syntax enable
+filetype plugin indent on
+
+colorscheme dracula
 
 " Hybrid numbering, relative except the current line. 
 set number
