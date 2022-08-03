@@ -20,7 +20,11 @@ let g:netrw_liststyle = 3
 set tabstop=3
 
 packadd! dracula
+packadd! rust.vim
 syntax enable
+filetype plugin indent on
+
 colorscheme dracula
 
 set number
+
