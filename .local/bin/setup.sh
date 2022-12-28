@@ -6,10 +6,10 @@
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
 # Tools
-sudo apt install git vim alacritty fonts-firacode fonts-hack
+sudo apt install git vim alacritty fonts-firacode fonts-hack neovim
 
 # Cargo deps
-sudo apt install libssl-dev
+sudo apt install libssl-dev cmake build-essential
 
 sudo dnf install alacritty fira-code-fonts
 sudo dnf install openssl-devel cmake
