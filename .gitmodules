@@ -7,3 +7,21 @@
 [submodule ".vim/pack/plugins/start/rust.vim"]
 	path = .vim/pack/plugins/start/rust.vim
 	url = git@github.com:rust-lang/rust.vim.git
+[submodule "~/.local/share/nvim/site/pack/themes/start/dracula"]
+	path = .vim/pack/themes/start/dracula
+	url = https://github.com/dracula/vim.git
+[submodule "~/.local/share/nvim/site/pack/themes/start/colorschemes"]
+	path = .vim/pack/themes/start/colorschemes
+	url = git@github.com:vim/colorschemes.git
+[submodule "~/.local/share/nvim/site/pack/plugins/start/rust.vim"]
+	path = .vim/pack/plugins/start/rust.vim
+	url = git@github.com:rust-lang/rust.vim.git
+[submodule ".vim/pack/plugins/start/vim-go"]
+	path = .vim/pack/plugins/start/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule ".local/share/nvim/site/pack/plugins/start/vim-go"]
+	path = .local/share/nvim/site/pack/plugins/start/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule ".local/share/nvim/site/pack/plugins/start/rust.vim"]
+	path = .local/share/nvim/site/pack/plugins/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim

@@ -130,3 +130,11 @@ alias minibox="ssh henkdb4@192.168.0.144"
 
 # shopt -s cdspell
 # ind 'set completion-ignore-case on'
+
+export PATH=$PATH:$HOME/.local/bin
+
+if command -v nvim &> /dev/null
+then
+    alias vim=nvim
+fi
+
