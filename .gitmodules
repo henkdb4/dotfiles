@@ -25,3 +25,5 @@
 [submodule ".local/share/nvim/site/pack/plugins/start/rust.vim"]
 	path = .local/share/nvim/site/pack/plugins/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim
+[submodule ".local/share/nvim/site/pack/vendor/start/nerdtree"]
+	url = https://github.com/preservim/nerdtree.git
