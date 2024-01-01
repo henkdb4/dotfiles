@@ -1,0 +1,14 @@
+---
+- name: Add the flathub flatpak repository remote
+  community.general.flatpak_remote:
+    name: "{{ item.name }}"
+    flatpakrepo_url: "{{ item.remote }}"
+    state: present
+  with_items: "{{ flatpak_remotes }}"
+
+- name: Install flatpak packages
+  community.general.flatpak:
+    name: "{{ item.name }}"
+    remote: "{{ item.remote | default(omit) }}"
+    state: present
+  with_items: "{{ flatpak_packages }}"

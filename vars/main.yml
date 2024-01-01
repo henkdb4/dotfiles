@@ -1,0 +1,10 @@
+---
+flatpak_remotes:
+  - name: flathub
+    remote: https://dl.flathub.org/repo/flathub.flatpakrepo 
+
+flatpak_packages:
+  - name: io.github.gamingdoom.Datcord
+  - name: com.github.zocker_160.SyncThingy
+  - name: org.keepassxc.KeePassXC
+  - name: com.spotify.Client
