@@ -158,7 +158,6 @@
 
 # Git repositories that you want to pull and push
 repos = [
-    "~/src/*/",
     "~/dotfiles"
 ]
 
