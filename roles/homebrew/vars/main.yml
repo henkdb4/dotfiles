@@ -1,9 +1,0 @@
-brew_packages:
- - topgrade
- - starship
- - neovim
- 
- 
- 
-brew_install_tmp: '/tmp/brew'
-brew_install_url: 'https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh'
