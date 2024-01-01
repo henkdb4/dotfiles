@@ -1,0 +1,6 @@
+---
+- name: Ensure bashrs updated
+  ansible.builtin.copy:
+    src: config/bashrc
+    dest: ~/.bashrc
+
