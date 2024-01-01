@@ -13,3 +13,10 @@ brew_packages:
   - topgrade
   - starship
   - neovim
+
+system_packages:
+  - alacritty
+
+dotfiles: 
+  bashrc: .bashrc
+  alacritty: .alacritty.yml

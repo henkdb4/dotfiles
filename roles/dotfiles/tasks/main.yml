@@ -1,6 +1,7 @@
 ---
-- name: Ensure bashrs updated
+- name: Ensure dotfiles up to date
   ansible.builtin.copy:
-    src: config/bashrc
-    dest: ~/.bashrc
+    src: "config/{{ item.key }}"
+    dest: "~/{{ item.value }}"
+  with_dict: "{{ dotfiles }}"
 

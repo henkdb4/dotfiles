@@ -1,4 +1,10 @@
 ---
+- name: Install packages
+  ansible.builtin.package:
+    name: "{{ system_packages }}"
+    state: present
+  become: true
+
 - name: Add the flathub flatpak repository remote
   community.general.flatpak_remote:
     name: "{{ item.name }}"
