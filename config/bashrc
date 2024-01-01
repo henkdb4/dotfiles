@@ -117,6 +117,8 @@ if ! shopt -oq posix; then
 fi
 . "$HOME/.cargo/env"
 
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 if test -n "$(which starship)"; then
 	eval "$(starship init bash)"
 fi
