@@ -20,3 +20,7 @@ system_packages:
 dotfiles: 
   bashrc: .bashrc
   alacritty: .alacritty.yml
+
+neovim_plugins:
+  rust.vim: https://github.com/rust-lang/rust.vim
+  zig.vim: https://github.com/ziglang/zig.vim
