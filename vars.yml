@@ -19,6 +19,7 @@ system_packages:
 
 dotfiles: 
   bashrc: .bashrc
+  inputrc: .inputrc
   alacritty: .alacritty.yml
   topgrade: .config/topgrade.toml
   git: .gitconfig
