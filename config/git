@@ -3,3 +3,5 @@
 	name = Henk Barten
 [init]
 	defaultBranch = main
+[pull]
+	rebase = true
