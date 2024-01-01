@@ -1,0 +1,6 @@
+---
+- name: Ensure nvim config up to date
+  ansible.builtin.copy:
+    src: config/nvim.init
+    dest: ~/.config/nvim/init.nvim
+
