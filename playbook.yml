@@ -1,0 +1,7 @@
+---
+- name: Setup DevBox
+  hosts: localhost
+  gather_facts: false
+  roles:
+    - system
+    - homebrew

@@ -1,0 +1,14 @@
+---
+- name: DEBUG
+  debug:
+    msg: "Hello"
+
+- name: Ensure HomeBrew installed
+  ansible.builtin.include_tasks:
+    file: install.yml
+
+- name: Install HomeBrew Packages
+  community.general.homebrew:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ brew_packages }}"

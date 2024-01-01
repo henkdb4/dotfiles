@@ -1,0 +1,7 @@
+---
+- name: Passwordless Sudo
+  ansible.builtin.copy:
+    src: sudoers
+    dest: /etc/sudoers
+  become: true
+
