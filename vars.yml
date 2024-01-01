@@ -20,6 +20,8 @@ system_packages:
 dotfiles: 
   bashrc: .bashrc
   alacritty: .alacritty.yml
+  topgrade: .config/topgrade.toml
+  git: .gitconfig
 
 neovim_plugins:
   rust.vim: https://github.com/rust-lang/rust.vim
