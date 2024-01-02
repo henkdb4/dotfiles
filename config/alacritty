@@ -1,24 +1,6 @@
 env:
   WINIT_X11_SCALE_FACTOR: "1"  # Make alacritty not scale on laptop
 
-font:
-  # Normal (roman) font face
-  normal:
-    family: Fira Code
-    style: Regular
-  
-  # Bold font face
-  bold:
-    family: Fira Code
-    style: Bold
-
-  # Italic font face
-  italic:
-    family: Hack
-    style: Italic
-
-  size: 12
-
 dynamic_title: true
 
 key_bindings:
