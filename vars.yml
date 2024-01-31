@@ -16,6 +16,8 @@ brew_packages:
 
 system_packages:
   - alacritty
+  - inxi
+  - htop
 
 dotfiles: 
   bashrc: .bashrc
