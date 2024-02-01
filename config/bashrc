@@ -140,3 +140,5 @@ then
     alias vim=nvim
 fi
 
+export PATH=/opt/wonderful/bin:$PATH
+export WONDERFUL_TOOLCHAIN=/opt/wonderful
