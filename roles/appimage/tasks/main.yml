@@ -1,0 +1,7 @@
+---
+- name: Install Obsidian
+  ansible.builtin.get_url:
+    url: "{{ item }}"
+    dest: ~/Applications/
+    mode: u+rwx
+  with_items: "{{ appimages }}"
