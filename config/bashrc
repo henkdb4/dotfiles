@@ -135,6 +135,8 @@ alias minibox="ssh henkdb4@192.168.0.144"
 
 export PATH=$PATH:$HOME/.local/bin
 
+export PATH=$PATH:$HOME/src/script
+
 if command -v nvim &> /dev/null
 then
     alias vim=nvim
