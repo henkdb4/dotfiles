@@ -27,7 +27,8 @@ dotfiles:
   inputrc: .inputrc
   alacritty: .alacritty.yml
   topgrade: .config/topgrade.toml
-  git: .gitconfig
+  bash_profile: .bash_profile
+  hyprland.conf: .config/hypr/hyprland.conf
 
 neovim_plugins:
   rust.vim: https://github.com/rust-lang/rust.vim

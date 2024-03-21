@@ -1,4 +1,9 @@
 ---
+- name: Ensure apps folder
+  ansible.builtin.file:
+    path: ~/Applications
+    state: directory
+
 - name: Install Obsidian
   ansible.builtin.get_url:
     url: "{{ item }}"
