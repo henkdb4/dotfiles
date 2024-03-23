@@ -22,6 +22,9 @@ system_packages:
   - htop
   - adb
 
+dotfolders: 
+  - .config/hypr
+
 dotfiles: 
   bashrc: .bashrc
   inputrc: .inputrc

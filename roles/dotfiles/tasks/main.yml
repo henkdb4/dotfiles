@@ -1,6 +1,12 @@
 ---
+- name: Ensure dotfolders present
+  ansible.builtin.file:
+    path: "~/{{ item }}"
+    state: directory
+  with_list: "{{ dotfolders }}"
+
 - name: Ensure dotfiles up to date
-  ansible.builtin.copy:
+  ansible.builtin.template:
     src: "config/{{ item.key }}"
     dest: "~/{{ item.value }}"
   with_dict: "{{ dotfiles }}"
