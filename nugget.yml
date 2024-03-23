@@ -2,6 +2,8 @@
 - name: Setup DevBox
   hosts: localhost
   gather_facts: false
+  vars:
+    host: nugget
   vars_files:
     - vars.yml
   roles:
@@ -11,3 +13,4 @@
     - packages
     - homebrew
     - appimage
+

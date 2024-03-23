@@ -4,6 +4,8 @@
   gather_facts: false
   vars_files:
     - vars.yml
+  vars:
+    host: slabby
   roles:
     - dotfiles
     - neovim
