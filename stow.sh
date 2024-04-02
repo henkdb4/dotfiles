@@ -1,0 +1,1 @@
+bash/.local/bin/stow.sh

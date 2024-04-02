@@ -22,17 +22,6 @@ system_packages:
   - htop
   - adb
 
-dotfolders: 
-  - .config/hypr
-
-dotfiles: 
-  bashrc: .bashrc
-  inputrc: .inputrc
-  alacritty: .alacritty.yml
-  topgrade: .config/topgrade.toml
-  bash_profile: .bash_profile
-  hyprland.conf: .config/hypr/hyprland.conf
-
 neovim_plugins:
   rust.vim: https://github.com/rust-lang/rust.vim
   zig.vim: https://github.com/ziglang/zig.vim
