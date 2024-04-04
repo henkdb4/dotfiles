@@ -133,6 +133,8 @@ alias minibox="ssh henkdb4@192.168.0.144"
 # shopt -s cdspell
 # ind 'set completion-ignore-case on'
 
+source $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh
+
 export PATH=$PATH:$HOME/.local/bin
 
 export PATH=$PATH:$HOME/src/script
@@ -144,3 +146,4 @@ fi
 
 export PATH=/opt/wonderful/bin:$PATH
 export WONDERFUL_TOOLCHAIN=/opt/wonderful
+
