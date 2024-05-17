@@ -1,1 +1,1 @@
-bash/.local/bin/stow.sh
+stow/.local/bin/stow.sh
