@@ -87,7 +87,13 @@ in {
       discord
       spotify
       wofi
+      alacritty
+      kitty
+      waybar
+      starship
       unstable.obsidian
+      swaynotificationcenter
+#      minecraft
     ];
   };
 
@@ -96,15 +102,13 @@ in {
   programs.hyprland.enable = true;
 
   environment.systemPackages = with pkgs; [
+    xdg-desktop-portal-hyprland
     neovim
     git
-    alacritty
-    kitty
     lua
     zig
     syncthing
     topgrade
-    starship
     stow
     ansible
   ];
