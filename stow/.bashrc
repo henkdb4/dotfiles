@@ -147,3 +147,7 @@ fi
 export PATH=/opt/wonderful/bin:$PATH
 export WONDERFUL_TOOLCHAIN=/opt/wonderful
 
+export DENO_INSTALL="$HOME/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+neofetch
