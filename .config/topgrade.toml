@@ -1,4 +1,7 @@
 [misc]
+
+remote_topgrades =[ "minibox" ]
+
 [pre_commands]
 
 [post_commands]

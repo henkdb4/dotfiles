@@ -115,7 +115,11 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-. "$HOME/.cargo/env"
+
+if test -n $HOME/.cargo
+then
+	. "$HOME/.cargo/env"
+fi
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
