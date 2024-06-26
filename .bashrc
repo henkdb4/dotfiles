@@ -161,3 +161,15 @@ if command -v neofetch &> /dev/null
 then
 	neofetch
 fi
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+if [ -d "$HOME/Applications/android-studio/bin/" ] ; then
+    PATH="$HOME/Applications/android-studio/bin/:$PATH"
+fi
+
+if [ -d "$HOME/Applications/platform-tools/" ] ; then
+    PATH="$HOME/Applications/platform-tools/:$PATH"
+fi
