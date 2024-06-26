@@ -128,12 +128,13 @@ alias S530="ssh henkdb4@192.168.0.178"
 alias minibox="ssh henkdb4@192.168.0.144"
 
 
-
-
 # shopt -s cdspell
 # ind 'set completion-ignore-case on'
 
-source $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh
+if test -n $HOME/.nix-profile
+then
+	source $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh
+fi
 
 export PATH=$PATH:$HOME/.local/bin
 
@@ -144,10 +145,19 @@ then
     alias vim=nvim
 fi
 
+
+if test -n /opt/wonderful
+then
+	export PATH=/opt/wonderful/bin:$PATH
+fi
+
 export PATH=/opt/wonderful/bin:$PATH
 export WONDERFUL_TOOLCHAIN=/opt/wonderful
 
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
-neofetch
+if command -v neofetch &> /dev/null
+then
+	neofetch
+fi
