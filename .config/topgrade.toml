@@ -1,6 +1,6 @@
 [misc]
-
-remote_topgrades =[ "minibox" ]
+remote_topgrades = [ "minibox" ]
+ignore_failures = [ "remotes" ]
 
 [pre_commands]
 
