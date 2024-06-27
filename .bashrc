@@ -116,9 +116,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if test -n $HOME/.cargo
+if test -e $HOME/.cargo/env
 then
 	. "$HOME/.cargo/env"
+elif test -d $HOME/.cargo/bin
+then
+	PATH="$PATH:$HOME/.cargo/bin"
 fi
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
