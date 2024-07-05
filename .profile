@@ -12,7 +12,7 @@
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
+#	. "$HOME/.bashrc"
     fi
 fi
 
@@ -33,7 +33,7 @@ export ZVM_INSTALL="$HOME/.zvm/self"
 export PATH="$PATH:$HOME/.zvm/bin"
 export PATH="$PATH:$ZVM_INSTALL/"
 
-# Hyperland startup on TTY1 (No DM mode)
+# Hyperland startup on TTY1 (No DM)
 if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
   exec Hyprland
 fi
