@@ -9,10 +9,10 @@
 #umask 022
 
 # if running bash
-if [ -n "$BASH_VERSION" ]; then
+ if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
-#	. "$HOME/.bashrc"
+	. "$HOME/.bashrc"
     fi
 fi
 
@@ -26,12 +26,9 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-. "$HOME/.cargo/env"
-
-# ZVM
-export ZVM_INSTALL="$HOME/.zvm/self"
-export PATH="$PATH:$HOME/.zvm/bin"
-export PATH="$PATH:$ZVM_INSTALL/"
+if [ -d "$HOME/.cargo/env" ] ; then
+    . "$HOME/.cargo/env"
+fi
 
 # Hyperland startup on TTY1 (No DM)
 if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then

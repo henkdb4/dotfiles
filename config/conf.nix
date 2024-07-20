@@ -3,9 +3,7 @@
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
 { config, pkgs, ... }:
-let
-  unstable = import <nixos-unstable> { config = { allowUnfree = true; }; };
-in {
+{
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
@@ -91,7 +89,6 @@ in {
       kitty
       waybar
       starship
-      unstable.obsidian
       swaynotificationcenter
 #      minecraft
     ];
