@@ -1,4 +1,0 @@
----
-- name: Ensure dotfiles present
-  ansible.builtin.script:
-    cmd: "stow.sh"

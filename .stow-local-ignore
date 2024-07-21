@@ -1,6 +1,3 @@
 stow.sh
-roles/
 config
-vars.yml
-nugget.yml
-slabby.yml
+

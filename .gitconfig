@@ -1,7 +1,7 @@
-[user]
-	email = henkdb4@pm.me
-	name = Henk Barten
 [init]
 	defaultBranch = main
 [pull]
 	rebase = true
+[user]
+	email = henkdb4@pm.me
+	name = TornHeckr
