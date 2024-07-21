@@ -1,3 +1,4 @@
 stow.sh
 config
-
+.git
+.gitmodule
