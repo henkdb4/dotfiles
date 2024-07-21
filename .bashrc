@@ -149,7 +149,8 @@ export PATH=$PATH:$HOME/src/script
 
 if command -v nvim &> /dev/null
 then
-    alias vim=nvim
+    alias vim="nvim"
+    alias view="nvim -R"
 fi
 
 
