@@ -85,6 +85,7 @@
       keepassxc
       discord
       spotify
+      steam
       wofi
       alacritty
       kitty
