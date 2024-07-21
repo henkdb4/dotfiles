@@ -75,6 +75,7 @@
   };
 
   services.flatpak.enable = true;
+  programs.steam.enable = true;
 
   users.users.henkdb4 = {
     isNormalUser = true;
@@ -85,7 +86,6 @@
       keepassxc
       discord
       spotify
-      steam
       wofi
       alacritty
       kitty

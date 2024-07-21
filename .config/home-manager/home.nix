@@ -4,7 +4,7 @@
   home.username = "henkdb4";
   home.homeDirectory = "/home/henkdb4";
 
-  home.stateVersion = "unstable"; # Please read the comment before changing.
+  home.stateVersion = "24.05"; # Please read the comment before changing.
 
   home.packages = with pkgs; [
 		hyprland	
