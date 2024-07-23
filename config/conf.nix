@@ -86,12 +86,15 @@
       keepassxc
       discord
       spotify
+      vscode
       wofi
       alacritty
       kitty
       waybar
       starship
       swaynotificationcenter
+      android-studio
+      android-tools
 #      minecraft
     ];
   };
