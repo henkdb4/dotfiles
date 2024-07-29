@@ -9,8 +9,10 @@ colorscheme elflord
 syntax enable
 filetype plugin indent on
 
-set tabstop=3
-set shiftwidth=3
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set smarttab
 
 syntax enable
 filetype plugin indent on
