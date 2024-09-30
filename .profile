@@ -36,3 +36,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
   exec Hyprland
 fi
+
++if [ .customrc ] ; then
++  source .customrc
++fi
