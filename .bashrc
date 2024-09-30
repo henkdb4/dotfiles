@@ -124,8 +124,6 @@ then
 	PATH="$PATH:$HOME/.cargo/bin"
 fi
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
 if test -n "$(which starship)"; then
 	eval "$(starship init bash)"
 fi
@@ -137,11 +135,6 @@ alias minibox="ssh henkdb4@192.168.0.144"
 
 # shopt -s cdspell
 # ind 'set completion-ignore-case on'
-
-if test -n $HOME/.nix-profile
-then
-	source $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh
-fi
 
 export PATH=$PATH:$HOME/.local/bin
 

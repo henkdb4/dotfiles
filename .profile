@@ -8,14 +8,6 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
-# if running bash
- if [ -n "$BASH_VERSION" ]; then
-    # include .bashrc if it exists
-    if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
-    fi
-fi
-
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
@@ -30,13 +22,11 @@ if [ -d "$HOME/.cargo/env" ] ; then
     . "$HOME/.cargo/env"
 fi
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
 # Hyperland startup on TTY1 (No DM)
 if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
   exec Hyprland
 fi
 
-+if [ .customrc ] ; then
-+  source .customrc
-+fi
+if [ -f .customrc ] ; then
+  source .customrc
+fi
