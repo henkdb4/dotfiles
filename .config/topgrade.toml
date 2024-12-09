@@ -8,7 +8,7 @@ ignore_failures = [ "remotes" ]
 
 # Custom commands
 [commands]
-"Stow it" = "~/dotfiles/stow.sh"
+"Set it up" = "~/dotfiles/setup.sh"
 
 [git]
 repos = [
