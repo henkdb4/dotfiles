@@ -13,3 +13,5 @@ compinit
 # End of lines added by compinstall
 
 eval "$(starship init zsh)"
+
+export PATH=$PATH:/home/tornheckr/.spicetify
