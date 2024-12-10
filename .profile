@@ -30,3 +30,8 @@ fi
 if [ -f .customrc ] ; then
   source .customrc
 fi
+
+# ZVM
+export ZVM_INSTALL="$HOME/.zvm/self"
+export PATH="$PATH:$HOME/.zvm/bin"
+export PATH="$PATH:$ZVM_INSTALL/"
