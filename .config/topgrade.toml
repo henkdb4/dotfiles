@@ -1,6 +1,6 @@
 [misc]
 # remote_topgrades = [ "minibox" ]
-ignore_failures = [ "remotes" ]
+ignore_failures = [ "remotes", "git" ]
 disable = ["pip3"]
 
 [pre_commands]
