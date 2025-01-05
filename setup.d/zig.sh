@@ -1,10 +1,10 @@
 #!/bin/env bash
 
-# stop when in termux, issues with binary linking in the formatter
+# stop when in termux, go has issues with networking so i'm installing it with apt
 if [ -n $TERMUX_VERSION ]; then
-  exit 0;
+      exit 0;
 fi
-`
+
 # Installing ZVM
 curl https://raw.githubusercontent.com/tristanisham/zvm/master/install.sh | bash
 
