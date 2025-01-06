@@ -158,10 +158,6 @@ export WONDERFUL_TOOLCHAIN=/opt/wonderful
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
-if command -v neofetch &> /dev/null
-then
-	neofetch
-fi
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
@@ -174,3 +170,14 @@ fi
 if [ -d "$HOME/Applications/platform-tools/" ] ; then
     PATH="$HOME/Applications/platform-tools/:$PATH"
 fi
+
+if command -v figlet &> /dev/null
+then
+  figlet "Welcome TornHeckr!"
+fi
+
+if command -v neofetch &> /dev/null
+then
+	neofetch
+fi
+
