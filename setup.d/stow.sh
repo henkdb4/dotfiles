@@ -3,4 +3,4 @@ if [ -d /etc/nixos ]; then
 	sudo ln -s $HOME/dotfiles/config/conf.nix /etc/nixos/configuration.nix
 fi
 
-stow --dir ~/dotfiles --restow .
+stow --dir ~/dotfiles --restow home

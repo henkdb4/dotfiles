@@ -1,8 +1,0 @@
-stow.sh
-config
-.git
-.gitmodule
-
-# setup
-setup.sh
-setup.d
