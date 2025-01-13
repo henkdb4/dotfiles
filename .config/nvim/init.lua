@@ -27,3 +27,7 @@ vim.opt.wildmode = "longest,list"
 vim.keymap.set('n', '<F3>', ":tabp<CR>")
 vim.keymap.set('n', '<F4>', ":tabn<CR>")
 vim.keymap.set('n', '<F5>', ":tabnew<CR>")
+
+-- Disable zig formatting as long as android has the bug
+vim.g.zig_fmt_autosave = 0
+
