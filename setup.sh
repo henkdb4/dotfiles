@@ -6,6 +6,6 @@ setups="$(find $scriptdir/scripts/ -maxdepth 1 -mindepth 1 -executable)"
 for setup in $setups; do
 	echo "Running setup: $setup"
 	"$setup"
-	echo "Finished running $setup with exit code $?"
+  echo "Finished running $(basename $setup) with exit code $?"
 done
 
