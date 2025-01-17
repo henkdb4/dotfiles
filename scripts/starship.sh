@@ -1,6 +1,6 @@
 #!/bin/env bash
 
-if [ -n $TERMUX_VERSION ]; then
+if ! [ -z $TERMUX_VERSION ]; then
   echo "Running termux, installing via pkg"
   pkg i starship
   exit 0;
