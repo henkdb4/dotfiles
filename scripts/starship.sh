@@ -1,5 +1,10 @@
 #!/bin/env bash
 
+if command -v starship; then
+  echo "Starhip installed, skipping..."
+  exit 0;
+fi
+
 if ! [ -z $TERMUX_VERSION ]; then
   echo "Running termux, installing via pkg"
   pkg i starship
