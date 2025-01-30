@@ -5,4 +5,4 @@ fi
 
 echo "Stowing files"
 
-stow --dir ~/dotfiles --restow home
+stow --dotfiles --dir ~/dotfiles --restow home
