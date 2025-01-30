@@ -6,5 +6,10 @@ fi
 echo "Stowing files in home dir"
 stow --dotfiles --dir ~/dotfiles --restow home
 
+if [ ! -d ~/.config ]; then
+  echo "Creating .config folder"
+  mkdir ~/.config
+fi
+
 echo "Stowing files in config dir"
 stow --dotfiles --dir ~/dotfiles --restow --target ~/.config config
