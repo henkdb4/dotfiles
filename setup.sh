@@ -1,7 +1,7 @@
 #!/bin/bash
 
 scriptdir="$(dirname -- $0)"
-setups="$(find $scriptdir/scripts/ -maxdepth 1 -mindepth 1 -executable)"
+setups="$(find $scriptdir/scripts/ -maxdepth 1 -mindepth 1 -executable | sort)"
 
 for setup in $setups; do
 	echo "Running setup: $setup"
