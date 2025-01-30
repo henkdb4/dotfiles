@@ -14,5 +14,5 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 echo "Installing fatpak apps"
 for pkg in $pkgs; do
-  flatpak install $pkg
+  flatpak install --user $pkg
 done
