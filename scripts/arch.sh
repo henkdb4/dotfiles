@@ -5,7 +5,7 @@ if ! [ -f "/etc/arch-release" ]; then
   exit 0
 fi
 
-PackageList="neovim luarocks man"
+PackageList="neovim luarocks man hyprland wofi"
 
 yay -Sy --noconfirm # I sometimes have problems with an outdated database
 
