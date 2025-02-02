@@ -10,9 +10,9 @@ pkgs="com.discordapp.Discord
   md.obsidian.Obsidian"
 
 echo "Adding Repos to flatpak"
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists --system flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 echo "Installing fatpak apps"
 for pkg in $pkgs; do
-  flatpak install --user $pkg
+  flatpak install --system flathub $pkg
 done
