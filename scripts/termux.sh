@@ -5,4 +5,6 @@ if [ -z $TERMUX_VERSION ]; then
   exit 0;
 fi
 
-pkg i topgrade neofetch which git openssh neovim elvish zig ncdu fdupes ranger stow wget man jq htop figlet
+pkgs="$(<pkgs/default)"
+
+pkg i topgrade which openssh neovim elvish zig ranger wget man jq htop $pkgs
