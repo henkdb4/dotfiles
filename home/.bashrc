@@ -42,8 +42,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-export EDITOR="nvim"
-
 if test -e $HOME/.cargo/env
 then
 	. "$HOME/.cargo/env"
@@ -62,6 +60,7 @@ export PATH=$PATH:$HOME/.local/bin
 
 if command -v nvim &> /dev/null
 then
+    export EDITOR="nvim"
     alias vim="nvim"
     alias view="nvim -R"
 fi

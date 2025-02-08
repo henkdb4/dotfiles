@@ -15,3 +15,15 @@ compinit
 eval "$(starship init zsh)"
 
 export PATH=$PATH:/home/tornheckr/.spicetify
+
+if command -v nvim &> /dev/null
+then
+    export EDITOR="nvim"
+    alias vim="nvim"
+    alias view="nvim -R"
+fi
+
+if command -v neofetch &> /dev/null
+then
+	neofetch
+fi
