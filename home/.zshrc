@@ -27,3 +27,5 @@ if command -v neofetch &> /dev/null
 then
 	neofetch
 fi
+
+alias weer="curl 'https://wttr.in/schijndel?0'"
