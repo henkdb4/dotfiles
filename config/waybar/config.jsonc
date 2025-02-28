@@ -1,0 +1,65 @@
+{
+  "layer": "top",
+  //"position": "bottom",
+  "height": "50",
+  "modules-left": ["hyprland/workspaces", "hyperland/submap"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": [
+    "mpd",
+    "gamemode",
+    "battery",
+    "cpu",
+    "memory",
+    "custom/wittr",
+    "network",
+    "idle_inhibitor",
+    "pulseaudio",
+    //"pulseaudio/slider",
+    "tray",
+    "clock",
+    "custom/power"
+  ],
+  "hyperland/window": {
+    "max-length": 50
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal",
+    "width": 100
+  },
+  "network": {
+    // "interface": "wlp2*", // (Optional) To force the use of this interface
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-ethernet": "{ipaddr}/{cidr} ",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "Disconnected ⚠",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}"
+  },
+  "clock": {
+    "format-alt": "{:%a, %d. %b  %H:%M}"
+  },
+  "custom/wittr": {
+    "format": "{text}",
+    "return-type": "json",
+    "escape": true,
+    "exec":"$HOME/.config/waybar/wittr.sh"
+  },
+  "custom/power": {
+    "format" : "⏻ ",
+    "tooltip": false,
+    "menu": "on-click",
+    "menu-file": "$HOME/.config/waybar/power_menu.xml",
+    "menu-actions": {
+      "shutdown": "shutdown",
+      "reboot": "reboot",
+      "suspend": "systemctl suspend",
+      "hibernate": "systemctl hibernate"
+    }
+  }
+}
