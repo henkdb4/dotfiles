@@ -1,11 +1,13 @@
-hyperland
+hyprland
+hyprlock
+hypridle
+
 wofi
 waybar
 kitty
 
-hyprlock
-hypridle
-
+gnome-keyring
+hyprpolkitagent
 xdg-desktop-portal-hyprland
 wl-clipboard
 wl-clipboard-x11
