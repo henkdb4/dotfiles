@@ -70,7 +70,7 @@ then
   figlet "Welcome TornHeckr!"
 fi
 
-if command -v neofetch &> /dev/null
+if command -v fastfetch &> /dev/null
 then
 	neofetch
 fi

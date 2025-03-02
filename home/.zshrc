@@ -23,9 +23,9 @@ then
     alias view="nvim -R"
 fi
 
-if command -v neofetch &> /dev/null
+if command -v fastfetch &> /dev/null
 then
-	neofetch
+	fastfetch
 fi
 
 alias weer="curl 'https://wttr.in/schijndel?0'"
