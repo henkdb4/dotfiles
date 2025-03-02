@@ -2,10 +2,17 @@
   "layer": "top",
   //"position": "bottom",
   "height": "50",
-  "modules-left": ["hyprland/workspaces", "hyperland/submap"],
-  "modules-center": ["hyprland/window"],
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyperland/submap",
+    "cava"
+  ],
+  "modules-center": [
+    "hyprland/window"
+  ],
   "modules-right": [
     "mpd",
+    "cava",
     "gamemode",
     "battery",
     "cpu",
@@ -14,7 +21,7 @@
     "network",
     "idle_inhibitor",
     "pulseaudio",
-    //"pulseaudio/slider",
+   //"pulseaudio/slider",
     "tray",
     "clock",
     "custom/power"
