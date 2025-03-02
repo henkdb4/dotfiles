@@ -54,7 +54,7 @@ if test -n "$(which starship)"; then
 	eval "$(starship init bash)"
 fi
 
-ind 'set completion-ignore-case on'
+bind 'set completion-ignore-case on'
 
 export PATH=$PATH:$HOME/.local/bin
 
