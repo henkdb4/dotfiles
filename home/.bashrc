@@ -72,7 +72,7 @@ fi
 
 if command -v fastfetch &> /dev/null
 then
-	neofetch
+	fastfetch
 fi
 
 alias weer="curl 'https://wttr.in/schijndel?0'"
