@@ -1,7 +1,7 @@
 #/bin/env bash
 
 if ! [ -f "/etc/arch-release" ]; then
-  echo "Not running Arch, quitting..."
+  echo "Not running Arch, skipping..."
   exit 0
 fi
 
