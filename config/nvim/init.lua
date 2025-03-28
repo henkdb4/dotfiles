@@ -7,6 +7,7 @@ vim.g.netrw_banner = 0 		-- Remove File Explorer Banner
 vim.g.netrw_liststyle = 3  	-- File explorer tree
 
 -- vim.cmd.colorscheme "elflord"
+vim.cmd.colorscheme "cyberdream"
 -- vim.cmd.colorscheme "catppuccin" -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
 
 vim.cmd.syntax "enable"
