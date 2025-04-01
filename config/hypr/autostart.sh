@@ -1,7 +1,6 @@
 #/bin/bash
 
-apps="com.spotify.Client
-      com.discordapp.Discord"
+apps="spotify discord"
 
 for app in $apps
 do
