@@ -1,7 +1,0 @@
-[init]
-	defaultBranch = main
-[pull]
-	rebase = true
-[user]
-	email = henkdb4@pm.me
-	name = TornHeckr
