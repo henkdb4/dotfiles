@@ -70,7 +70,7 @@ button:hover {
 #custom-power,
 #idle_inhibitor,
 #scratchpad {
-  margin-top: 2px;
+  margin-top: 0px;
   margin-bottom: 2px;
   margin-left: 4px;
   margin-right: 4px;
@@ -124,8 +124,8 @@ button:hover {
 }
 
 #idle_inhibitor {
-    border-top: 2px solid @grey;
-    color: @grey;
+    border-top: 2px solid @orange;
+    color: @orange;
     padding: 0 4px 0 8px;
 }
 
