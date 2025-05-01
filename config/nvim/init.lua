@@ -33,3 +33,10 @@ vim.keymap.set('n', '<F5>', ":tabnew<CR>")
 -- Disable zig formatting as long as android has the bug
 vim.g.zig_fmt_autosave = 0
 
+vim.lsp.config['zls'] = {
+  cmd = { 'zls' },
+  filetypes = { 'zig' },
+  root_markers = { 'build.zig', 'build.zig.zon' , '.git' },
+}
+
+ vim.lsp.enable('zls')
