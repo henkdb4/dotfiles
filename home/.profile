@@ -22,11 +22,6 @@ if [ -d "$HOME/.cargo/env" ] ; then
     . "$HOME/.cargo/env"
 fi
 
-# Hyperland startup on TTY1 (No DM)
-if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
-  exec Hyprland
-fi
-
 if [ -f .customrc ] ; then
   source .customrc
 fi
