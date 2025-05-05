@@ -5,15 +5,28 @@ if [ -f "/etc/debian-version" ]; then
   exit 0
 fi
 
-PKGS="build-essential $(<pkgs/default)"
-BREW_PKGS="$(<pkgs/shell)"
+pkgs="build-essential $(<pkgs/default)"
+brew_pkgs="$(<pkgs/shell)"
 
 echo "Installing apt packages"
-sudo apt install -y $PKGS
+for pkg in $pkgs
+do
+    if ! dpkg --status $pkg &> /dev/null
+    then
+	sudo apt install $pkg
+    fi
+done
 
-if ! command -v flatpak; then
+if ! command -v brew; then
     echo "Installing brew as not all packages are available in the repos"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-brew install $BREW_PKGS
+echo "Installing brew packages"
+for pkg in $brew_pkgs
+do
+    if ! brew list $pkg &> /dev/null
+    then
+        brew install $BREW_PKGS
+    fi
+done
