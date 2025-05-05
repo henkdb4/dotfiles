@@ -29,3 +29,4 @@ then
 fi
 
 alias weer="curl 'https://wttr.in/schijndel?0'"
+export CDPATH=".:/run/media/$USER/:/media"
