@@ -6,6 +6,20 @@ require("config.lazy")
 vim.g.netrw_banner = 0 		-- Remove File Explorer Banner
 vim.g.netrw_liststyle = 3  	-- File explorer tree
 
+
+-- setup nvim-tree
+-- disable netrw at the very start of your init.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+vim.opt.termguicolors = true
+
+local function open_nvim_tree()
+  require("nvim-tree.api").tree.open()
+end
+
+vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
+
 -- vim.cmd.colorscheme "elflord"
 vim.cmd.colorscheme "cyberdream"
 -- vim.cmd.colorscheme "catppuccin" -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
