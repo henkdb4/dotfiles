@@ -14,12 +14,6 @@ vim.g.loaded_netrwPlugin = 1
 
 vim.opt.termguicolors = true
 
-local function open_nvim_tree()
-  require("nvim-tree.api").tree.open()
-end
-
-vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
-
 -- vim.cmd.colorscheme "elflord"
 vim.cmd.colorscheme "cyberdream"
 -- vim.cmd.colorscheme "catppuccin" -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
