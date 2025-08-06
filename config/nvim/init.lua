@@ -6,12 +6,6 @@ require("config.lazy")
 vim.g.netrw_banner = 0 		-- Remove File Explorer Banner
 vim.g.netrw_liststyle = 3  	-- File explorer tree
 
-
--- setup nvim-tree
--- disable netrw at the very start of your init.lua
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
 vim.opt.termguicolors = true
 
 -- vim.cmd.colorscheme "elflord"
