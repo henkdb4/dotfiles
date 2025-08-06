@@ -1,0 +1,9 @@
+[config]
+
+[templates.hyprland]
+input_path = 'templates/hyprland.conf'
+output_path = '~/.config/hypr/colors.conf'
+
+[templates.yazi]
+input_path = 'templates/yazi.toml'
+output_path = '~/.config/yazi/theme.toml'
