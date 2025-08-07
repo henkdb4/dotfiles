@@ -1,7 +1,7 @@
 [misc]
 # remote_topgrades = [ "minibox" ]
-ignore_failures = [ "remotes", "git_repos" ]
-disable = ["pip3"]
+# ignore_failures = [ "remotes", "git_repos" ]
+disable = ["pip3", "jetbrains_toolbox"]
 
 [pre_commands]
 
@@ -13,5 +13,7 @@ disable = ["pip3"]
 
 [git]
 repos = [
-    "~/dotfiles"
+    "~/dotfiles",
+    "~/src/clone/*"
 ]
+arguments = "--rebase --autostash"
