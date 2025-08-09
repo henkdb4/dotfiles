@@ -1,8 +1,8 @@
-#/bin/env bash
+#/usr/bin/env bash
 
 if ! [ -f "/etc/arch-release" ]; then
   echo "Not running Arch, skipping..."
-  exit 0
+  exit -1
 fi
 
 PackageList="neovim luarocks man $(<pkgs/default) $(<pkgs/shell) $(<pkgs/wm) $(<pkgs/apps)"

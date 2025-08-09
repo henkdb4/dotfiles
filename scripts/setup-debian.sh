@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 if ! [ -f /etc/debian-version ]; then
   echo "Not running Debian based os, skipping..."

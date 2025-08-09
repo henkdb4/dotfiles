@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 # stop when in termux, go has issues with networking so i'm installing it with apt
 if [ -n $TERMUX_VERSION ]; then

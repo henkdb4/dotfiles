@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 if command -v starship; then
   echo "Starhip installed, skipping..."

@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 if ! command -v flatpak; then
   echo "Flatpak not present, skipping..."
