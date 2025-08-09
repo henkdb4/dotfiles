@@ -2,7 +2,7 @@
 
 if ! [ -f /etc/debian-version ]; then
   echo "Not running Debian based os, skipping..."
-  exit 0
+  exit -1
 fi
 
 pkgs="build-essential $(<pkgs/default)"

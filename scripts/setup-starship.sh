@@ -2,7 +2,7 @@
 
 if command -v starship; then
   echo "Starhip installed, skipping..."
-  exit 0;
+  exit -1;
 fi
 
 if ! [ -z $TERMUX_VERSION ]; then

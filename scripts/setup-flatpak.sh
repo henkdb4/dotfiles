@@ -2,7 +2,7 @@
 
 if ! command -v flatpak; then
   echo "Flatpak not present, skipping..."
-  exit 0;
+  exit -1;
 fi
 
 echo "Adding Repos to flatpak"

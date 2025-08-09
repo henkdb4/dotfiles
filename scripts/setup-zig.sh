@@ -2,7 +2,7 @@
 
 # stop when in termux, go has issues with networking so i'm installing it with apt
 if [ -n $TERMUX_VERSION ]; then
-      exit 0;
+      exit -1;
 fi
 
 # Installing ZVM
