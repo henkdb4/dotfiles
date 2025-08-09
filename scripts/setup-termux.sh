@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 # stop when not in termux
 if [ -z $TERMUX_VERSION ]; then
