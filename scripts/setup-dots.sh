@@ -5,6 +5,11 @@ if [ -d /etc/nixos ]; then
 	sudo ln -s $HOME/dotfiles/config/conf.nix /etc/nixos/configuration.nix
 fi
 
+if ! command -v stow; then
+  echo "stow not present, skipping..."
+  exit -1;
+fi
+
 Result=0
 
 echo "Stowing files in home dir"
