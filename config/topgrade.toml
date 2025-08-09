@@ -2,6 +2,7 @@
 # remote_topgrades = [ "minibox" ]
 # ignore_failures = [ "remotes", "git_repos" ]
 disable = ["pip3", "jetbrains_toolbox"]
+pre_sudo = true
 
 [pre_commands]
 
