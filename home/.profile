@@ -22,6 +22,10 @@ if [ -d "$HOME/.cargo/env" ] ; then
     . "$HOME/.cargo/env"
 fi
 
+if command -v "gem" > /dev/null; then
+    export PATH="$PATH:$(gem environment path)"
+fi
+
 if [ -f .customrc ] ; then
   source .customrc
 fi
