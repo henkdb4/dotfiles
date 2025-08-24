@@ -1,11 +1,13 @@
 [Unit]
 Description=Lavasink used for the Discord Bot
-After=network.target
+After=network-online.target
+Wants=network-online.target
 
 [Service]
 User=bot
 WorkingDirectory=/opt/lavalink
 ExecStart=/usr/bin/java -jar /opt/lavalink/Lavalink.jar
+ExecStartPost=/usr/bin/timeout 30 sh -c 'while ! ss -H -t -l -n sport = :2333 | grep -q "^LISTEN.*:2333"; do sleep 1; done'
 Restart=always
 RestartSec=5s
 StandardOutput=journal

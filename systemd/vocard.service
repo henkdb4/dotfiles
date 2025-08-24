@@ -3,13 +3,14 @@ Description=Vocard Discord Music Bot
 Requires=lavalink.service
 Requires=mongodb.service
 After=network.target
+After=lavalink.service
 After=vocard-dashboard.service
 
 [Service]
 User=bot
 WorkingDirectory=/opt/vocard
 ExecStart=/opt/botpipenv/bin/python /opt/vocard/main.py
-Restart=always
+Restart=on-failure
 RestartSec=5s
 StandardOutput=journal
 StandardError=journal
