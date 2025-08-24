@@ -1,0 +1,15 @@
+[Unit]
+Description=Lavasink used for the Discord Bot
+After=network.target
+
+[Service]
+User=bot
+WorkingDirectory=/opt/lavalink
+ExecStart=/usr/bin/java -jar /opt/lavalink/Lavalink.jar
+Restart=always
+RestartSec=5s
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

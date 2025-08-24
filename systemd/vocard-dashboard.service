@@ -1,0 +1,15 @@
+[Unit]
+Description=Lavasink used for the Discord Bot
+After=network.target
+
+[Service]
+User=bot
+WorkingDirectory=/opt/vocard-dashboard
+ExecStart=/opt/botpipenv/bin/python /opt/vocard-dashboard/main.py
+Restart=always
+RestartSec=5s
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
