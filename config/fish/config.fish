@@ -5,3 +5,5 @@ if status is-interactive
     fastfetch
   end
 end
+
+fish_add_path /home/tornheckr/.spicetify
