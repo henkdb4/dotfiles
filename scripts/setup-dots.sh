@@ -2,7 +2,7 @@
 
 if [ -d /etc/nixos ]; then
 	sudo rm /etc/nixos/configuration.nix
-	sudo ln -s $HOME/dotfiles/config/conf.nix /etc/nixos/configuration.nix
+	sudo ln -s config/conf.nix /etc/nixos/configuration.nix
 fi
 
 if ! command -v stow; then
@@ -13,7 +13,7 @@ fi
 Result=0
 
 echo "Stowing files in home dir"
-stow --dotfiles --dir ~/dotfiles --restow --no-folding home
+stow --dotfiles --dir . --restow --no-folding --target ~ home 
 Result=$(($Result+$?))
 
 if [ ! -d ~/.config ]; then
@@ -22,7 +22,7 @@ if [ ! -d ~/.config ]; then
 fi
 
 echo "Stowing files in config dir"
-stow --dotfiles --dir ~/dotfiles --restow --no-folding --target ~/.config config
+stow --dotfiles --dir . --restow --no-folding --target ~/.config config
 Result=$(($Result+$?))
 
 exit $Result
